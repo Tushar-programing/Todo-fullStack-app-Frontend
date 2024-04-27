@@ -70,6 +70,7 @@ function login() {
         placeholder="*************"
         className1=" mb-5"
         className2=" mb-8"
+        autoComplete="off"
         {...register("password", {
             required: true,
         })}
