@@ -74,12 +74,14 @@ function login() {
         {...register("password", {
             required: true,
         })}
+
         />
         <div className='flex justify-center mt-2 mb-7'><p className='text-xl font-normal'>Don't have an Account? <Link className='font-semibold' to="/signup">Sign up</Link></p></div>
         <Button
         type='submit'
         className='w-full mb-16 mt-8 hover:bg-blue-600'
         >Sign in</Button>
+        
       </form>
     </div>
     </>
