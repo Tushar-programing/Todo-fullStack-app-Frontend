@@ -28,11 +28,13 @@ function todoCard(todo) {
         setIsTodoEditable(false)
     }
 
-    const deleteTodo = async() => {
+    const deleteTodo = async(e) => {
+        e.preventDefault();
         // console.log("deleting todo");
         await axios.post(`https://todo-fullstack-app-backend.onrender.com/api/v1/todo/deleteTodo/${todo._id}`, {}, {
             withCredentials: true,
         })
+        window.location.reload()
     }
 
 

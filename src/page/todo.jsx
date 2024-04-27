@@ -7,7 +7,7 @@ import TodoCard from '../component/todoCard';
 
 function todo() {
     const [tod, setTodo] = useState([]);
-    const [map, setMap] = useState();
+    const [map, setMap] = useState("");
     // console.log("todo page", tod);
 
     const active = useSelector(state => state.auth.status)
@@ -20,12 +20,14 @@ function todo() {
     }, [])
 
     const add = async(e) => {
-      // e.preventDefault()
+      e.preventDefault()
       
       await axios.post('https://todo-fullstack-app-backend.onrender.com/api/v1/todo/createTodo', {content: map, complete: false}, {
         withCredentials: true,
       })
-      .then((todos) => setTodo(todos.data.data))
+
+      window.location.reload()
+
     }
 
   return (

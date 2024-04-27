@@ -19,10 +19,10 @@ function login() {
         // console.log(data.email, data.password);
         setError("")
         try {
-            // console.log("hogaya");
+            console.log("hogaya");
             const response = await axios.post('https://todo-fullstack-app-backend.onrender.com/api/v1/users/login', data, {
-              withCredentials: true
-          });
+              withCredentials: true,
+            });
             
             if (response) {
               await axios.post('https://todo-fullstack-app-backend.onrender.com/api/v1/users/getCurrentUser', {}, {
