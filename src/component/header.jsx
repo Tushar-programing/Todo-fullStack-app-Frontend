@@ -5,6 +5,7 @@ import {useSelector} from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { logout as log } from "../store/authslice.js"
 import img1 from './image/account.png'
+import '../App.css'
 
 import axios from 'axios';
 // import  {Logoutbtn}  from '../index';
@@ -45,17 +46,17 @@ function header() {
 
     const navitem= [
         {
-            name:"Your Todo",
+            name:"My todo",
             url: "/",
             status: true
         },
         {
-            name:" login",
+            name:" Login ",
             url: "/login",
             status: !active
         },
         {
-            name:" signup",
+            name:" signup ",
             url: "/signup",
             status: !active
         },
@@ -70,7 +71,7 @@ function header() {
                 item.status ? (
                     <li key={item.name}>
                         <button id={item.name} onClick={() => navigate(item.url)}
-                        className=' inline-block sm:mx-0 lg:mx-5 sm:px-1 lg:px-6 py-2 duration-200 sm:text-lg lg:text-xl sm:mr-20 lg:mr-20 font-serif text-white rounded-full'
+                        className={` inline-block sm:mx-0 fancy-underline  sm:px-1 py-2 duration-200 sm:text-lg lg:text-xl sm:mr-10 mr-5 lg:mr-20 font-serif text-white rounded-full`}
                         >
                             {item.name}
                         </button>

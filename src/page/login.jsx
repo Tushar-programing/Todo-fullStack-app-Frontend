@@ -43,8 +43,8 @@ function login() {
 
   return (
     <>
-    <div className='text-2xl text-gray-800 font-semibold mt-5 ml-24 '>Login account</div>
-    <div className='w-48 ml-24 bg-gray-600 mt-2 h-0.5'></div>
+    <div className='sm:text-2xl text-xl text-gray-800 font-semibold mt-5 sm:ml-24 ml-32 '>Login account</div>
+    <div className='sm:w-48 w-32 sm:ml-24 ml-32 bg-gray-600 mt-2 h-0.5'></div>
     <div  className='flex justify-center mt-16'>
 
       <form onSubmit={handleSubmit(already)} id='form'>
@@ -79,7 +79,7 @@ function login() {
         <div className='flex justify-center mt-2 mb-7'><p className='text-xl font-normal'>Don't have an Account? <Link className='font-semibold' to="/signup">Sign up</Link></p></div>
         <Button
         type='submit'
-        className='w-full mb-16 mt-8 hover:bg-blue-600'
+        className='sm:w-full w-32 sm:ml-0 ml-24 mb-16 mt-8 hover:bg-blue-600'
         >Sign in</Button>
         
       </form>

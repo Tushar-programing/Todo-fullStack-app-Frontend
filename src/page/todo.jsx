@@ -31,18 +31,18 @@ function todo() {
     }
 
   return (
-    <div className='mx-52 bg-[#172842]  mt-10 pb-10'>
-      <div className='mx-72'>
-        <div className='text-white text-2xl font-semibold flex justify-center pt-8'>Your Todo's</div>
+    <div className='sm:mx-24 md:mx-40 lg:mx-64 mx-5 bg-[#172842] sm:mt-10 mt-7 pb-10'>
+      <div className='sm:mx-10 md:mx-20 lg:mx-52 mx-3'>
+        <div className='text-white sm:text-2xl text-xl font-semibold flex justify-center sm:pt-8 pt-6'>Your Todo's</div>
         <form onSubmit={add} className="flex">
             <input
                 type="text"
                 placeholder="Write Todo..."
-                className="w-full border text-white border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5 mt-8"
+                className="w-full border text-white border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5 sm:mt-8 mt-6"
                 value={map}
                 onChange={(e) => setMap(e.target.value)}
             />
-            <button type='submit' className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0 mt-8">
+            <button type='submit' className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0 sm:mt-8 mt-6">
                 Add
             </button>
         </form>
