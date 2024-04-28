@@ -63,14 +63,14 @@ function header() {
   return (
     <>
         <div className='w-full py-4 pl-4 bg-[#264573] flex'>
-            <Link to="/"><img src={image} width="50" alt="logo" className='ml-20' /></Link>
+            <Link to="/"><img src={image} width="50" alt="logo" className='sm:ml-2  xl:ml-20' /></Link>
 
             <ul className='flex ml-auto'>
             {navitem.map((item) =>
                 item.status ? (
                     <li key={item.name}>
                         <button id={item.name} onClick={() => navigate(item.url)}
-                        className='inline-block mx-5 px-6 py-2 duration-200 text-xl mr-20 font-serif text-white rounded-full'
+                        className=' inline-block sm:mx-0 lg:mx-5 sm:px-1 lg:px-6 py-2 duration-200 sm:text-lg lg:text-xl sm:mr-20 lg:mr-20 font-serif text-white rounded-full'
                         >
                             {item.name}
                         </button>
