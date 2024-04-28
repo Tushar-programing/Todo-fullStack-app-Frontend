@@ -81,7 +81,7 @@ function header() {
             {active &&
                 <li>
                     <button onClick={logout}
-                        className='inline-block mx-5 px-6 py-2 duration-200 text-xl mr-20 font-serif text-white rounded-full'
+                        className='inline-block sm:mx-5 mx-0 sm:px-6 px-3 py-2 duration-200 sm:text-xl  sm:mr-20 mr-2 font-serif text-white rounded-full'
                         >
                             Logout
                     </button>
@@ -90,15 +90,17 @@ function header() {
             }
             {active &&
                 <li>
-                    <img className='w-9 ml-6' src={img1}/>
-                    <div className=' mr-8'>
-                        { userData &&<h1 className='font-serif text-white '>{userData.fullName}</h1>}
+                    <img className='sm:w-9 w-8 sm:ml-6 sm:mt-0 mt-1 ml-5' src={img1}/>
+                    <div className=' sm:mr-8 mr-2'>
+                        <h1 className='font-serif text-white sm:text-lg text-xs sm:mt-0 mt-1 sm:block hidden'>Tushar saini</h1>
                     </div>
                 </li>
             }
             </ul>
         </div>
     </>
+
+// { userData &&   //{userData.fullName}
     
   )
 }
