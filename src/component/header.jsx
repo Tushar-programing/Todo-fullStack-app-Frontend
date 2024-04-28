@@ -90,7 +90,7 @@ function header() {
             }
             {active &&
                 <li>
-                    <img className='sm:w-9 w-8 sm:ml-6 sm:mt-0 mt-1 ml-5' src={img1}/>
+                    <img className='sm:w-9 w-8 sm:ml-6 sm:mt-0 mt-1 ml-3 sm:mr-0 mr-3' src={img1}/>
                     <div className=' sm:mr-8 mr-2'>
                         <h1 className='font-serif text-white sm:text-lg text-xs sm:mt-0 mt-1 sm:block hidden'>Tushar saini</h1>
                     </div>
